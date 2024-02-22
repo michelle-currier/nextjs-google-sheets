@@ -3,6 +3,7 @@ import {google} from "googleapis";
 
 type SheetForm = {
     name: string
+    company: string
     email: string
     phone: string
     message: string
@@ -38,11 +39,11 @@ export default async function handler(
 
         const response = await sheets.spreadsheets.values.append({
             spreadsheetId: process.env.GOOGLE_SHEET_ID,
-            range: 'A1:D1',
+            range: 'A1:E1',
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [
-                    [body.name, body.email, body.phone, body.message]
+                    [body.name, body.company, body.email, body.phone, body.message]
                 ]
             }
         });

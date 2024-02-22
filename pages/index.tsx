@@ -3,6 +3,7 @@ import {FormEvent, useState} from "react";
 
 const Home: NextPage = () => {
     const [name, setName] = useState('');
+    const [company, setCompany] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
 
         let form = {
             name,
+            company,
             email,
             phone,
             message
@@ -34,6 +36,7 @@ const Home: NextPage = () => {
         setMessage('')
         setPhone('')
         setName('')
+        setCompany('')
         setEmail('')
     }
 
@@ -44,6 +47,10 @@ const Home: NextPage = () => {
                     <div className="flex items-center justify-center">
                         <label htmlFor="name" className="sr-only">Name</label>
                         <input value={name} onChange={e => setName(e.target.value)} type="text" name="name" id="name" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Your Name" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <label htmlFor="company" className="sr-only">Company Name</label>
+                        <input value={company} onChange={e => setCompany(e.target.value)} type="text" name="company" id="company" className="shadow-md focus:ring-indigo-500 focus:border-indigo-500 block w-64 sm:text-md border-gray-300 rounded-md" placeholder="Company Name" />
                     </div>
                     <div className="flex items-center justify-center">
                         <label htmlFor="email" className="sr-only">Email</label>
