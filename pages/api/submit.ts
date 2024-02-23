@@ -53,7 +53,10 @@ export default async function handler(
         })
     } catch (e) {
         console.error(e)
-        return res.status(e.code).send({message: e.message})
+            console.error("Error occurred while sending response:", error);
+            return res.status(500).send({ message: "Internal server error" });
+        }
+        // return res.status(e.code).send({message: e.message})
         
         // return res.status( statusCode: 500).send( body: {message: 'Something went wrong'})
     }
