@@ -51,8 +51,7 @@ export default async function handler(
         return res.status(201).json({
             data: response.data
         })
-    } catch (e) {
-        console.error(e)
+    } catch (error) {
             console.error("Error occurred while sending response:", error);
             return res.status(500).send({ message: "Internal server error" });
         }
