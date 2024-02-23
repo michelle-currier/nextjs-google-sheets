@@ -102,7 +102,9 @@ $ npm i googleapis
 Now that our project is setup with the necessary packages, we want to design our form using TailwindCSS
 
 ### Update Index File
-
+### todo 
+fix the submit i keep getting a issue with   
+```alert(i.data.tableRange),```
 ```tsx
 import type { NextPage } from 'next'
 import {FormEvent, useState} from "react";
