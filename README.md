@@ -94,6 +94,8 @@ Next we want to install the Google API package by using the following command:
 ```bash
 $ npm i googleapis
 ```
+## run your dev local
+```npm run dev```
 
 ## Code our project
 
