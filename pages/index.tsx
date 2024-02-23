@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         const content = await rawResponse.json();
 
         // print to screen
-        // alert(content.data.tableRange)
+        alert(content.data.tableRange)
 
         // Reset the form fields
         setMessage('')
