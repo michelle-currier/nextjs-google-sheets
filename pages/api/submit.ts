@@ -60,4 +60,4 @@ export default async function handler(
         // return res.status( statusCode: 500).send( body: {message: 'Something went wrong'})
     }
 
-}
+
