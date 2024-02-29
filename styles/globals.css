@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+  
+}
+.container {
+    margin: auto;
+}
+.container > main {
+    padding: 2rem;
+    border: 2px solid #f0c;
+}
+nav ul li {
+    padding: .5rem 1rem;
+}
