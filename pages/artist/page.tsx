@@ -4,7 +4,7 @@ export default async function Page({ params }: {
     return (
         <div>
          <h1>hello Artists! </h1>
-         <h2>ID: { params.id } </h2>
+         {/* <h2>ID: { params.id } </h2> */}
         </div>         
     )
 }
